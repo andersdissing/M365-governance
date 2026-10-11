@@ -1,0 +1,8 @@
+{
+  "name": "governance-site-tools",
+  "private": true,
+  "description": "Video export for the how-it-works animation",
+  "dependencies": {
+    "playwright-core": "1.48.2"
+  }
+}

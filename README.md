@@ -106,3 +106,4 @@ A chat bubble with three rounded corners and a square bottom-left corner plus a 
 - `design-ref/industry/styles.css` — base tokens and the blueprint frame classes.
 - `docs/assets/` — screenshots.
 - `docs/` — the published site (GitHub Pages serves `main` / `/docs`).
+- `docs/video/how-it-works.{mp4,webm}` + `-poster.jpg` — the animation exported at 1600×900, 30 fps, 41 s. Re-export with `tools/render-video.js` (instructions in its header).
