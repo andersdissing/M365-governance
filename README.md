@@ -16,7 +16,7 @@ The task is to **rebuild this as a plain static site** (HTML + CSS + a small amo
 **High-fidelity.** Colours, type, spacing, copy and interactions are final. Recreate pixel-close.
 
 ## Hosting — new GitHub repo, static page
-1. Create a new repo, e.g. `governance-site` (public, or private with Pages enabled on your plan).
+1. Create a new repo, `M365-governance` (live at https://andersdissing.github.io/M365-governance/) (public, or private with Pages enabled on your plan).
 2. Build to a static folder with this structure:
    ```
    /index.html

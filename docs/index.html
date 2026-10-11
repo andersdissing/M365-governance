@@ -3,10 +3,359 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Governance for Microsoft 365</title>
-  <meta name="robots" content="noindex">
+  <title>Governance for Microsoft 365 — sharing and guest access</title>
+  <meta name="description" content="Every share in your tenant was a decision somebody made. The people who shared are asked, later and in Teams, whether it still holds — and their answers become your record.">
+  <meta name="theme-color" content="#2b2a5e">
+
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="Governance for Microsoft 365 — sharing and guest access">
+  <meta property="og:description" content="Every share in your tenant was a decision somebody made. Now somebody is asked whether it still holds.">
+  <meta property="og:url" content="https://andersdissing.github.io/M365-governance/">
+  <meta property="og:image" content="https://andersdissing.github.io/M365-governance/assets/og-image.png">
+  <meta property="og:image:width" content="1200">
+  <meta property="og:image:height" content="630">
+  <meta name="twitter:card" content="summary_large_image">
+
+  <link rel="icon" href="assets/favicon.svg" type="image/svg+xml">
+  <link rel="icon" href="assets/favicon-32.png" sizes="32x32" type="image/png">
+  <link rel="apple-touch-icon" href="assets/apple-touch-icon.png">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@600&family=Figtree:wght@400;500;600;700&display=swap">
+  <link rel="stylesheet" href="styles.css">
+  <script src="main.js" defer></script>
 </head>
 <body>
-  <p>Coming soon.</p>
+
+<svg width="0" height="0" style="position:absolute" aria-hidden="true">
+  <symbol id="logo-mark" viewBox="0 0 36 36">
+    <path class="logo-bubble" d="M7 0H29A7 7 0 0 1 36 7V21A7 7 0 0 1 29 28H0V7A7 7 0 0 1 7 0ZM0 28H8L0 36Z"/>
+    <rect class="logo-a" x="8" y="10" width="7" height="7"/>
+    <rect class="logo-b" x="20" y="10" width="7" height="7"/>
+  </symbol>
+</svg>
+
+<!-- 1 · HERO -->
+<header id="top" class="hero field">
+  <div class="wrap">
+    <div class="hero-copy">
+      <div class="logo">
+        <svg width="36" height="36" style="--bubble:#fff; --a:var(--indigo-500); --b:var(--teal-500)" aria-hidden="true"><use href="#logo-mark"/></svg>
+        <span class="logo-word"><b>Governance</b><span>for Microsoft 365</span></span>
+      </div>
+      <span class="eyebrow c-eyebrow-on-indigo">Sharing and guest access · Microsoft 365</span>
+      <h1>Every share in your tenant was a decision somebody made.</h1>
+      <p class="sub hero-sub">Now somebody is asked whether it still holds.</p>
+      <p class="hero-body">Nothing is locked down, nothing is blocked, and nobody is retrained. The people who made each sharing decision are asked, later and in Teams — and their answers become your record.</p>
+    </div>
+
+    <figure class="hero-fig">
+      <div class="sq-teal" aria-hidden="true"></div>
+      <div class="sq-coral" aria-hidden="true"></div>
+      <div class="blueprint blueprint--dashed">
+        <i class="corner tl"></i><i class="corner tr"></i><i class="corner bl"></i><i class="corner br"></i>
+        <div class="teams-card">
+          <div class="teams-card__head">
+            <span class="teams-card__bot" aria-hidden="true">G</span>
+            <span class="teams-card__who"><strong>Guest access</strong><span>Only you can see this · 09:12</span></span>
+          </div>
+          <p class="teams-card__q">Do you still need <strong>Lars Bisgaard</strong> to have access?</p>
+          <div class="teams-card__guest">
+            <span class="avatar-guest" aria-hidden="true"></span>
+            <span><b>lars.bisgaard@fabrikam.dk</b><small>Can reach 1 place you shared · Partner onboarding pack</small></span>
+          </div>
+          <div class="teams-card__actions" aria-hidden="true">
+            <span class="teams-btn teams-btn--primary">Still needed</span>
+            <span class="teams-btn">No longer needed</span>
+          </div>
+        </div>
+      </div>
+      <figcaption class="caption"><b>FIG. 01</b><span>The question, as it arrives in Teams. One click, and the answer is recorded.</span></figcaption>
+    </figure>
+  </div>
+</header>
+
+<main>
+
+<!-- 2 · PROBLEM -->
+<section id="problem" class="problem">
+  <div class="wrap">
+    <div class="intro-row">
+      <div class="intro-row__head">
+        <span class="eyebrow c-coral">01 · Access outlives its reason</span>
+        <h2 class="h2">Internal oversharing used to need somebody to go looking.</h2>
+        <p class="sub c-indigo">Now it only needs somebody to ask.</p>
+      </div>
+      <p class="intro-row__aside lede muted">Sharing in Microsoft 365 takes one click. Remembering why, and asking later whether it still stands, takes something Microsoft 365 does not have. The gap opens in two directions, and most organisations have both.</p>
+    </div>
+
+    <div class="stack" style="gap: 12px">
+      <div class="tiles stats">
+        <div class="tile tile--coral">
+          <span class="tile-label c-coral">A</span>
+          <span class="stat-num">40%</span>
+          <span class="stat-text">delayed their Copilot rollout by three months or more because of oversharing</span>
+        </div>
+        <div class="tile tile--steel">
+          <span class="tile-label c-steel">B</span>
+          <span class="stat-num">64%</span>
+          <span class="stat-text">spent considerable time and resources on governance and security risk before they could deploy at all</span>
+        </div>
+        <div class="tile tile--solid">
+          <span class="tile-label c-eyebrow-on-indigo">C · A GUEST ACCOUNT, BY DEFAULT</span>
+          <span class="stat-claim">No expiry. No inactivity alert. No cleanup.</span>
+        </div>
+      </div>
+      <p class="source">A, B: Gartner survey of 132 IT leaders, June 2025. C: how the platform works.</p>
+    </div>
+
+    <div class="two-col">
+      <div class="stack" style="gap: 14px">
+        <h3 class="swatch-h" style="--swatch: var(--steel-500)">Inside the company</h3>
+        <p class="body muted">A folder gets shared with everyone in the organisation, because that was the quickest way to unblock one colleague on one afternoon. The link is still there. So is the folder.</p>
+        <p class="body muted">It is rarely one folder. <em>Everyone Except External Users</em> — the group that grants access to every employee you have — is the single largest source of it, and it is the default suggestion in several of SharePoint's own sharing dialogs.</p>
+      </div>
+      <div class="stack" style="gap: 14px">
+        <h3 class="swatch-h" style="--swatch: var(--teal-500)">Outside the organisation</h3>
+        <p class="body muted">An external user arrives the ordinary way: somebody shares a folder. From that moment, nothing records which internal person is responsible for them. The project ends. The person who shared moves on. The access doesn't.</p>
+        <p class="body muted">Organisations collaborating externally for a couple of years hold hundreds to thousands of guest accounts — some who signed in and stopped, some who never signed in at all.</p>
+      </div>
+    </div>
+
+    <p class="statement">The person who granted the access is the only one who knows it should end. <span class="c-indigo">Nothing ever asks them.</span></p>
+  </div>
+</section>
+
+<!-- 3 · APPROACH -->
+<section class="approach">
+  <div class="wrap split">
+    <div class="split__head">
+      <span class="eyebrow c-indigo-700">02 · Governance without taking anything away</span>
+      <h2 class="h2">You should not have to lock sharing down to get control of it.</h2>
+    </div>
+    <div class="split__body">
+      <p class="lede">Every answer to oversharing so far has been restriction. Tighten external sharing. Turn off Anyone links. Make people raise a ticket to collaborate. It works, and it costs you the goodwill of everybody who now has to ask permission to do their job.</p>
+      <p class="lede">This takes the other route. Nothing is locked down, nothing is blocked, and nobody is retrained. The people who made the sharing decisions are simply asked, later, whether they still stand — and their answers become your record.</p>
+    </div>
+  </div>
+</section>
+
+<!-- 4 · HOW IT WORKS -->
+<section id="how" class="how field field--v">
+  <div class="wrap">
+    <div class="intro-row">
+      <div class="intro-row__head">
+        <span class="eyebrow c-eyebrow-on-indigo">03 · How it works</span>
+        <h2 class="h2" style="text-wrap: initial">A named person, one question, a recorded answer.</h2>
+      </div>
+      <p class="intro-row__aside lede on-indigo">Megan shares a folder with Lars at Fabrikam. The project ends in May. In November, somebody finally asks.</p>
+    </div>
+
+    <figure class="video-fig">
+      <div class="blueprint blueprint--dashed">
+        <i class="corner tl"></i><i class="corner tr"></i><i class="corner bl"></i><i class="corner br"></i>
+        <div class="video-frame">
+          <video id="how-video" muted playsinline controls preload="metadata" poster="video/how-it-works-poster.jpg"
+                 aria-label="Animation: Megan shares a folder with Lars at Fabrikam, is asked in Teams in November whether he still needs access, answers no longer needed, and Lars is offboarded on record.">
+            <source src="video/how-it-works.webm" type="video/webm">
+            <source src="video/how-it-works.mp4" type="video/mp4">
+          </video>
+        </div>
+      </div>
+      <figcaption class="caption"><b>FIG. 02</b><span>Two people, one shared folder, one question in Teams. 41 seconds, no sound.</span></figcaption>
+    </figure>
+
+    <div class="tiles steps">
+      <div class="tile tile--white" style="border-color: var(--steel-500)">
+        <span class="tile-label c-steel">1 · WATCH</span>
+        <p>When somebody shares a folder, or an external account appears, a <strong>named internal person becomes answerable</strong> for that access.</p>
+      </div>
+      <div class="tile tile--white" style="border-color: var(--indigo-500)">
+        <span class="tile-label c-indigo">2 · ASK</span>
+        <p>On a schedule you set, that person gets one question in Teams: <em>is this still needed?</em> It takes one click.</p>
+      </div>
+      <div class="tile tile--white" style="border-color: var(--teal-500)">
+        <span class="tile-label c-teal">3 · RECORD</span>
+        <p>Not just the access change, but <strong>the decision</strong> — who made it and when. The artefact an auditor asks for and nobody has.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- 5 · PRODUCT -->
+<section id="product" class="product">
+  <div class="wrap">
+
+    <div class="feature">
+      <div class="feature__copy">
+        <span class="eyebrow c-steel">04 · Shared links</span>
+        <h2 class="h2 h2--60" style="text-wrap: initial">Every link, not only the external ones.</h2>
+        <p class="lede">People set expiry dates on links and forget them. When a link expires, work stops — so the instinct is to set long expiries, or none at all.</p>
+        <p class="lede">A link shared with one colleague, with the whole company, or outside it: each was a decision with a reason, and each is watched the same way.</p>
+        <p class="feature__punch">The existing link keeps working. <span class="c-steel">There is nothing to re-send.</span></p>
+      </div>
+      <figure class="feature__aside feature-fig">
+        <div class="blueprint blueprint--steel">
+          <i class="corner tl"></i><i class="corner tr"></i><i class="corner bl"></i><i class="corner br"></i>
+          <img src="assets/09-bot-card-link-expiring.png" alt="Shared links bot card: in 4 days, Contract - Fabrikam renewal will expire" loading="lazy">
+        </div>
+        <figcaption class="caption"><b>FIG. 03</b><span>Before a link expires, its owner is told. One button extends it — same URL, same permission.</span></figcaption>
+      </figure>
+    </div>
+
+    <div class="feature">
+      <div class="feature__copy">
+        <span class="eyebrow c-teal">05 · Guest access</span>
+        <h2 class="h2 h2--60" style="text-wrap: initial">Who is answerable for every guest.</h2>
+        <p class="lede">Every guest invited from the day you switch it on, in one list, with the thing that exists nowhere else: who is answerable for them, and what they can reach today.</p>
+        <p class="lede">On your schedule, that person is asked whether the guest is still needed. Say yes and the clock resets. Say no and the guest passes to the next person who invited them. Only when nobody is left does an administrator hear about it.</p>
+      </div>
+      <div class="feature__aside">
+        <p class="tile tile--teal quote-tile">A "no" from one person is not a verdict on the guest. It is one person stepping back.</p>
+      </div>
+    </div>
+
+    <div class="carousel" id="apps" data-carousel>
+      <div class="carousel__head">
+        <div class="carousel__title">
+          <span class="eyebrow c-indigo">Inside Teams</span>
+          <h3 class="h3">The two apps, as people use them</h3>
+        </div>
+        <div class="carousel__nav">
+          <span class="counter" data-counter aria-live="polite">01 / 07</span>
+          <button class="icon-btn" type="button" data-prev aria-label="Previous screenshot">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><polyline points="15 18 9 12 15 6"/></svg>
+          </button>
+          <button class="icon-btn icon-btn--primary" type="button" data-next aria-label="Next screenshot">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><polyline points="9 18 15 12 9 6"/></svg>
+          </button>
+        </div>
+      </div>
+
+      <div class="groups">
+        <fieldset class="group group--links">
+          <legend>SHARED LINKS APP</legend>
+          <button class="pill" type="button" data-slide="0" aria-pressed="true">Dashboard</button>
+          <button class="pill" type="button" data-slide="1" aria-pressed="false">My links</button>
+          <button class="pill" type="button" data-slide="2" aria-pressed="false">Reports</button>
+          <button class="pill" type="button" data-slide="3" aria-pressed="false">Auditlog</button>
+        </fieldset>
+        <fieldset class="group group--guests">
+          <legend>GUEST ACCESS APP</legend>
+          <button class="pill" type="button" data-slide="4" aria-pressed="false">My guests</button>
+          <button class="pill" type="button" data-slide="5" aria-pressed="false">Report</button>
+          <button class="pill" type="button" data-slide="6" aria-pressed="false">Guest detail</button>
+        </fieldset>
+      </div>
+
+      <figure class="shot-fig">
+        <div class="blueprint blueprint--teal">
+          <i class="corner tl"></i><i class="corner tr"></i><i class="corner bl"></i><i class="corner br"></i>
+          <div class="shot">
+            <img data-shot src="assets/01-sharedlinks-dashboard.png" alt="Shared links — Dashboard, inside Teams" width="1568" height="595">
+          </div>
+        </div>
+        <figcaption class="shot-caption"><b data-shot-title>Shared links · Dashboard</b><span data-shot-caption>Every link is counted — Anyone with the link, external and guest, internal — and removals and extensions too.</span></figcaption>
+      </figure>
+    </div>
+
+  </div>
+</section>
+
+<!-- 6 · ANSWERABLE -->
+<section class="answerable field field--plain">
+  <div class="wrap">
+    <div class="answerable__quote">
+      <span class="eyebrow c-eyebrow-on-indigo">06 · People see only what they are answerable for</span>
+      <p class="statement">"Counted, not listed. These were shared by someone else, so their names are <span class="c-teal-light">not yours to read.</span>"</p>
+      <a class="link-on-indigo" href="#apps" data-show-slide="6">See it on a guest's page →</a>
+    </div>
+    <div class="answerable__body">
+      <p class="lede on-indigo">Access is enforced in the database itself, not by hiding things in the interface. Somebody who opens a guest's page sees the folders <em>they</em> shared. Where that guest can also reach folders shared by colleagues, they get the number — but not the names.</p>
+      <p class="lede on-indigo">Administrators see the whole tenant. Everybody else sees exactly their own responsibility.</p>
+    </div>
+  </div>
+</section>
+
+<!-- 7 · CONTROL -->
+<section id="control" class="control">
+  <div class="wrap">
+    <div class="intro-row">
+      <div class="intro-row__head">
+        <span class="eyebrow c-coral">07 · You decide what it is allowed to do</span>
+        <h2 class="h2 h2--60" style="text-wrap: initial">It asks questions. What it does with the answers is yours to set.</h2>
+      </div>
+      <p class="intro-row__aside lede muted">The defaults are the cautious ones.</p>
+    </div>
+    <div class="tiles controls">
+      <div class="tile tile--steel">
+        <h4>Links</h4>
+        <p>Let people extend an expiry from the card, or keep it read-only and let the reminder stand on its own.</p>
+        <span class="tag" style="color: var(--steel-700)">Ships with: extend from the card</span>
+      </div>
+      <div class="tile tile--indigo">
+        <h4>Guests</h4>
+        <p>A final "no longer needed" can be recorded for an administrator to act on, or act on the account directly.</p>
+        <span class="tag c-indigo-700">Ships with: recording only</span>
+      </div>
+      <div class="tile tile--teal">
+        <h4>Timing</h4>
+        <p>How long before an expiry people are reminded, how long before a guest is revisited, and what a "still needed" buys.</p>
+        <span class="tag" style="color: var(--teal-700)">Your schedule</span>
+      </div>
+    </div>
+    <div class="closing">
+      <p class="statement">Until you turn something on, <span class="c-coral">it holds no permission to do it.</span></p>
+      <p class="body">That is not a policy setting. Where the product is set to record rather than act, it is not granted the access that would let it act at all.</p>
+    </div>
+  </div>
+</section>
+
+<!-- 8 · CONNECTS -->
+<section class="connects">
+  <div class="wrap split">
+    <div class="split__head">
+      <span class="eyebrow c-teal-label">08 · It connects to what you already have</span>
+      <h2 class="h2">The signals about sharing stop being Microsoft's and start being yours.</h2>
+    </div>
+    <div class="split__body">
+      <p class="lede" style="text-wrap: initial">Everything the product observes is published as a standard event. Your own systems can subscribe to the same signals and build on them without touching anything here.</p>
+      <div class="chips">
+        <span class="chip">Service desk</span>
+        <span class="chip">Joiner-mover-leaver</span>
+        <span class="chip">SIEM</span>
+        <span class="chip">Your own reporting</span>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- 9 · CONTACT -->
+<section id="contact" class="contact field">
+  <div class="sq-teal" aria-hidden="true"></div>
+  <div class="sq-coral" aria-hidden="true"></div>
+  <div class="wrap">
+    <h2>Make every share someone's responsibility — <span class="c-teal-light">starting with the next one.</span></h2>
+    <div class="contact__actions">
+      <a class="cta" href="mailto:dissing@sharepointkonsulenterne.dk">Contact Anders Dissing</a>
+      <a class="contact__mail" href="mailto:dissing@sharepointkonsulenterne.dk">dissing@sharepointkonsulenterne.dk</a>
+    </div>
+  </div>
+</section>
+
+</main>
+
+<!-- 10 · FOOTER -->
+<footer class="footer">
+  <div class="wrap">
+    <span class="logo">
+      <svg width="24" height="24" style="--bubble:var(--indigo-500); --a:#fff; --b:var(--teal-light)" aria-hidden="true"><use href="#logo-mark"/></svg>
+      <span><strong>Governance</strong> for Microsoft 365 — sharing and guest access</span>
+    </span>
+    <span>Screenshots use demo data. External addresses are invented.</span>
+  </div>
+</footer>
+
 </body>
 </html>
